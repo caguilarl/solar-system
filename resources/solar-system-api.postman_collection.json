@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "0b2b386c-50f3-4a57-a04e-7bcc8855cd7d",
+		"name": "solar-system-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Liveness check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-url}}/api",
+					"host": [
+						"{{api-url}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List planets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-url}}/api/planets/list",
+					"host": [
+						"{{api-url}}"
+					],
+					"path": [
+						"api",
+						"planets",
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api-url",
+			"value": "http://localhost:3001"
+		}
+	]
+}
